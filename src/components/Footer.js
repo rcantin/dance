@@ -11,6 +11,9 @@ class Footer extends React.Component {
               <Link to="/">Home</Link>
             </div>
             <div className="px-2 text-muted d-none d-md-block">|</div>
+            <div className="p-1">
+              <Link to="/routines">Routines</Link>
+            </div>
           </div>
         </div>
       </div>

@@ -33,6 +33,11 @@ class TopNav extends React.Component {
                       Home
                     </Link>
                   </li>
+                  <li className="nav-item">
+                    <Link to="/routines" className="nav-link text-primary">
+                      Routines
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

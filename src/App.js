@@ -5,14 +5,12 @@ import ScrollToTop from "./scrollToTop";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Routines from "./components/Routines";
 
 class App extends React.Component {
   topspacing = {
     marginTop: 72,
   };
-  // minHeight = {
-  //   minHeight: '100%',
-  // };
 
   render() {
     return (
@@ -25,6 +23,7 @@ class App extends React.Component {
               <ScrollToTop />
               <Switch>
                 <Route path="/" exact component={Home} />
+                <Route path="/routines" component={Routines} />
               </Switch>
             </div>
             <div>

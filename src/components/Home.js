@@ -20,7 +20,7 @@ class Home extends React.Component {
         <div className="container-fluid px-3 py-5 px-md-5">
           <div className="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 g-5 justify-content-center text-center py-5">
             <div className="col">
-              <Link to="/routines">Routines</Link>            
+              <Link to="/routines">Routines</Link>
             </div>
           </div>
         </div>

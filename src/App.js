@@ -1,6 +1,6 @@
 import React from "react";
 import "./scss/theme.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./scrollToTop";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Router>
+        <Router basename="/">
           <Nav />
           <div className="d-flex flex-column justify-content-stretch align-items-stretch h-100">
             <div className="d-print-none" style={this.topspacing}></div>

@@ -1,0 +1,104 @@
+[
+    {
+        "name": "Push It",
+        "type": "hip hop",
+        "music": [
+            {
+            "name": "Push It",
+            "link":"http://www.google.ca"
+            }
+        ],
+        "costume": [
+            "Black Converse with white soles", "Black K-Way pants and jacket"
+        ],
+        "hair": "Low pony, no part",
+        "dancers": [
+            "Amelia Cantin", "Emma Carney", "Naliya Jelinek", "Chloe Kewell", "Morgan Kewell", "Lara Knight"
+        ]
+    },
+    {
+        "name": "My Message To You",
+        "type": "lyrical",
+        "music": [
+            {
+            "name": "My Message To You",
+            "link":"http://www.google.ca"
+            }
+        ],
+        "costume": [
+            ""
+        ],
+        "hair": "Low bun, middle part",
+        "dancers": [
+            "Amelia Cantin", "Emma Carney", "Naliya Jelinek", "Lara Knight", "Kaitlyn Marsden", "Leah Perry", "Aubrey Thomson"
+        ]
+    },
+    {
+        "name": "Peanut Butter Jelly",
+        "type": "jazz",
+        "music": [
+            {
+            "name": "Peanut Butter Jelly",
+            "link":"http://www.google.ca"
+            }
+        ],
+        "costume": [
+            ""
+        ],
+        "hair": "High pony, no part",
+        "dancers": [
+            "Alice Bentham", "Amelia Cantin", "Emma Carney", "Naliya Jelinek", "Chloe Kewell", "Morgan Kewell", "Lara Knight", "Payton MacLean", "Kaitlyn Marsden", "Madeline McRoberts", "Elle Rasmussen", "Stella Scruton", "Aubrey Thomson", "Aleasia Vachliotis"
+        ]
+    },
+    {
+        "name": "Lose Control",
+        "type": "hip hop",
+        "music": [
+            {
+            "name": "Lose Control",
+            "link":"http://www.google.ca"
+            }
+        ],
+        "costume": [
+            ""
+        ],
+        "hair": "Low pony, no part",
+        "dancers": [
+            "Amelia Cantin"
+        ]
+    },
+    {
+        "name": "Boogie On",
+        "type": "tap",
+        "music": [
+            {
+            "name": "Boogie On",
+            "link":"http://www.google.ca"
+            }
+        ],
+        "costume": [
+            ""
+        ],
+        "hair": "Low pony, no part",
+        "dancers":[
+            "Amelia Cantin", "Naliya Jelinek", "Lara Knight", "Kaitlyn Marsden", "Leah Perry", "Aubrey Thomson"
+        ]
+    },
+    {
+        "name": "Minnie Mouse March",
+        "type": "ballet",
+        "music": [
+            {
+            "name": "Minnie Mouse March",
+            "link":"http://www.google.ca"
+            }
+        ],
+        "costume": [
+            ""
+        ],
+        "hair": "Low bun, middle part",
+        "dancers":[
+            "Alice Bentham", "Payton MacLean", "Kaitlyn Marsden", "Madeline McRoberts", "Elle Rasmussen", "Aubrey Thomson", "Aleasia Vachliotis"
+        ]
+    }
+]

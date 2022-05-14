@@ -12,7 +12,7 @@ class TopNav extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top d-print-none">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top d-print-none">
           <div className="container-fluid">
             <Link to="/" className="navbar-brand pt-0">
               Dance Team Resources

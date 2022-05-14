@@ -1,20 +1,4 @@
-// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-// @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-
-html, body, #root {
-  height: 100%
-}
-
-// $font-family-base: "Noto Sans Display", Arial, sans-serif;
-// $font-family-base: "Outfit", Arial, sans-serif;
-$font-family-base: "Open Sans", Arial, sans-serif;
-
-$font-weight-lighter: 100;
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-$font-weight-bolder: 900;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $primary: #0099ff;
 $secondary: #333333;
@@ -22,21 +6,36 @@ $info: #9966cc;
 $success: #66cc66;
 $warning: #ff9933;
 $danger: #ff3333;
+$dark: #333333;
+$light: #f5f5f5;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+$body-bg: $light;
+
+$font-family-base: "Outfit", Arial, sans-serif;
+
+$font-weight-lighter: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
 
 $headings-font-weight: 700;
-$headings-margin-bottom:      .75em;
+$headings-margin-bottom: 0.75em;
 
-$hr-opacity: 1;
+$input-bg: white;
+// $form-label-margin-bottom: 0.25rem;
+// $form-label-font-size: 0.8rem;
+// $form-label-font-style:                 null !default;
+// $form-label-font-weight:                null !default;
+// $form-label-color:                      null !default;
 
 $link-decoration: none;
-
-$navbar-padding-y: 1rem;
-$navbar-padding-x: 1rem;
-
-$navbar-toggler-padding-y: 0.25rem;
-$navbar-toggler-padding-x: 0.25rem;
-$navbar-toggler-focus-width: 0;
-$navbar-light-toggler-border-color: transparent;
 
 $offcanvas-horizontal-width: 350px;
 

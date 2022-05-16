@@ -1,21 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../img/dance-logo.svg";
 import "bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 class TopNav extends React.Component {
   bannerlogostyle = {
-    height: 30,
-    padding: 0,
+    height: 38,
+    padding: 4,
   };
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top d-print-none">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-print-none">
           <div className="container-fluid">
-            <Link to="/" className="navbar-brand pt-0">
-              Dance Team Resources
+            <Link to="/" className="navbar-brand p-1">
+              <div className="d-flex justify-content-start align-items-center">
+                <div>
+                  <img src={Logo} alt="Logo" style={this.bannerlogostyle} />
+                </div>
+                <div>Dance Team Resources</div>
+              </div>
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span className="navbar-toggler-icon"></span>

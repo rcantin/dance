@@ -25,9 +25,6 @@
             "link":"http://www.google.ca"
             }
         ],
-        "costume": [
-            ""
-        ],
         "hair": "Low bun, middle part",
         "dancers": [
             "Amelia Cantin", "Emma Carney", "Naliya Jelinek", "Lara Knight", "Kaitlyn Marsden", "Leah Perry", "Aubrey Thomson"
@@ -41,9 +38,6 @@
             "name": "Peanut Butter Jelly",
             "link":"http://www.google.ca"
             }
-        ],
-        "costume": [
-            ""
         ],
         "hair": "High pony, no part",
         "dancers": [
@@ -59,9 +53,6 @@
             "link":"http://www.google.ca"
             }
         ],
-        "costume": [
-            ""
-        ],
         "hair": "Low pony, no part",
         "dancers": [
             "Amelia Cantin"
@@ -70,16 +61,7 @@
     {
         "name": "Boogie On",
         "type": "tap",
-        "music": [
-            {
-            "name": "Boogie On",
-            "link":"http://www.google.ca"
-            }
-        ],
-        "costume": [
-            ""
-        ],
-        "hair": "Low pony, no part",
+        "hair": "Low pony, middle part",
         "dancers":[
             "Amelia Cantin", "Naliya Jelinek", "Lara Knight", "Kaitlyn Marsden", "Leah Perry", "Aubrey Thomson"
         ]
@@ -87,18 +69,47 @@
     {
         "name": "Minnie Mouse March",
         "type": "ballet",
-        "music": [
-            {
-            "name": "Minnie Mouse March",
-            "link":"http://www.google.ca"
-            }
-        ],
-        "costume": [
-            ""
-        ],
         "hair": "Low bun, middle part",
         "dancers":[
             "Alice Bentham", "Payton MacLean", "Kaitlyn Marsden", "Madeline McRoberts", "Elle Rasmussen", "Aubrey Thomson", "Aleasia Vachliotis"
+        ]
+    },
+    {
+        "name": "Kiss the Sky",
+        "type": "jazz",
+        "music": [
+            {
+            "name": "Kiss the Sky",
+            "link":"http://www.google.ca"
+            }
+        ],
+        "hair": "Low bun, middle part",
+        "dancers":[
+            "Kaylinn Brown", "Mikaila Caravaggio", "Marina Cekolj", "Dawson Chinnick", "Alyssa Coccia", "Olivia Curry", "Leah Darby", "Avery Fleming", "Emily Green", "Letizia Mongrain", "Peyton Moskal", "Leah Perry", "Julia Simpson", "Adele Somerville", "Ayla Woloszanski"
+        ]
+    },
+    {
+        "name": "I'll be There For You",
+        "type": "lyrical",
+        "hair": "Low bun, middle part",
+        "dancers":[
+            "Mikaila Caravaggio", "Dawson Chinnick", "Olivia Curry", "Avery Fleming", "Emily Green", "Letizia Mongrain", "Peyton Moskal", "Julia Simpson", "Adele Somerville", "Ayla Woloszanski"
+        ]
+    },
+    {
+        "name": "Fire",
+        "type": "Acro",
+        "hair": "Low bun, middle part",
+        "dancers":[
+            "Kaylinn Brown", "Marina Cekolj", "Alyssa Coccia", "Leah Darby", "Kaitlyn Marsden", "Leah Perry", "Ayla Woloszanski"
+        ]
+    },
+    {
+        "name": "Red Balloon",
+        "type": "jazz",
+        "hair": "Low bun, middle part",
+        "dancers":[
+            "Emma Carney", "Marina Cekolj", "Lara Knight", "Leah Perry", "Elle Rasmussen", "Stella Scruton"
         ]
     }
 ]

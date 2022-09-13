@@ -6,10 +6,12 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Routines from "./components/Routines";
+import Classes from "./components/Classes";
+import Glossary from "./components/Glossary";
 
 class App extends React.Component {
   topspacing = {
-    marginTop: 72,
+    marginTop: 70,
   };
 
   render() {
@@ -24,6 +26,8 @@ class App extends React.Component {
               <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/routines" component={Routines} />
+                <Route path="/classes" component={Classes} />
+                <Route path="/glossary" component={Glossary} />
               </Switch>
             </div>
             <div>

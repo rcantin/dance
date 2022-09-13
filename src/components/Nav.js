@@ -7,8 +7,8 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 class TopNav extends React.Component {
   bannerlogostyle = {
-    height: 38,
-    padding: 4,
+    height: 42,
+    padding: 6,
   };
   render() {
     return (
@@ -20,15 +20,15 @@ class TopNav extends React.Component {
                 <div>
                   <img src={Logo} alt="Logo" style={this.bannerlogostyle} />
                 </div>
-                <div>Dance Team Resources</div>
+                <div className="fw-lighter fs-5">Dance Team Resources</div>
               </div>
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div className="offcanvas-header justify-content-between">
-                <button type="button" className="btn btn-link" data-bs-dismiss="offcanvas" aria-label="Close">
+              <div className="offcanvas-header justify-content-end">
+                <button type="button" className="btn btn-link btn-lg" data-bs-dismiss="offcanvas" aria-label="Close">
                   <FontAwesomeIcon icon={faTimes} size="lg" />
                 </button>
               </div>
@@ -40,10 +40,20 @@ class TopNav extends React.Component {
                     </Link>
                   </li>
                   <li className="nav-item">
+                    <Link to="/classes" className="nav-link text-primary">
+                      Class Schedule
+                    </Link>
+                  </li>
+                  {/* <li className="nav-item">
                     <Link to="/routines" className="nav-link text-primary">
                       Routines
                     </Link>
-                  </li>
+                  </li> */}
+                  {/* <li className="nav-item">
+                    <Link to="/glossary" className="nav-link text-primary">
+                      Glossary
+                    </Link>
+                  </li> */}
                 </ul>
               </div>
             </div>

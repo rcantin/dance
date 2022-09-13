@@ -1,0 +1,452 @@
+[
+  {
+    "name": "EXTENDED LINE",
+    "type": "Line",
+    "day": "Sat",
+    "start": "11:30am",
+    "end": "12:30pm",
+    "instructor": "Sarah S.",
+    "classid": 15234167,
+    "dancers": ""
+  },
+  {
+    "name": "INT/SR HIP HOP TECH",
+    "type": "Hip Hop",
+    "day": "Wed",
+    "start": "5:30pm",
+    "end": "6:30pm",
+    "instructor": "Anthony S.",
+    "classid": 15233787,
+    "dancers": ""
+  },
+  {
+    "name": "INT/SR TAP CHOREO",
+    "type": "Tap",
+    "day": "Thu",
+    "start": "5:15pm",
+    "end": "6:00pm",
+    "instructor": "David C.",
+    "classid": 15233889,
+    "dancers": ""
+  },
+  {
+    "name": "INT/SR TAP TECH",
+    "type": "Tap",
+    "day": "Thu",
+    "start": "4:30pm",
+    "end": "5:15pm",
+    "instructor": "David C.",
+    "classid": 15233884,
+    "dancers": ""
+  },
+  {
+    "name": "INTER ACRO CHOREO",
+    "type": "Acro",
+    "day": "Tue",
+    "start": "8:30pm",
+    "end": "9:15pm",
+    "instructor": "",
+    "classid": 15233735,
+    "dancers": ""
+  },
+  {
+    "name": "INTER ACRO TECH",
+    "type": "Acro",
+    "day": "Tue",
+    "start": "7:30pm",
+    "end": "8:30pm",
+    "instructor": "",
+    "classid": 15233707,
+    "dancers": ""
+  },
+  {
+    "name": "INTER BALLET CHOREO",
+    "type": "Ballet",
+    "day": "Wed",
+    "start": "6:30pm",
+    "end": "7:15pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233775,
+    "dancers": ""
+  },
+  {
+    "name": "INTER BALLET TECH",
+    "type": "Ballet",
+    "day": "Mon",
+    "start": "7:30pm",
+    "end": "8:30pm",
+    "instructor": "Irina L.",
+    "classid": 15233610,
+    "dancers": ""
+  },
+  {
+    "name": "INTER BALLET TECH",
+    "type": "Ballet",
+    "day": "Tue",
+    "start": "5:30pm",
+    "end": "6:30pm",
+    "instructor": "Irina L.",
+    "classid": 15233684,
+    "dancers": ""
+  },
+  {
+    "name": "INTER CONTEMPORARY SMALL CHOREO",
+    "type": "Contemporary",
+    "day": "Mon",
+    "start": "8:30pm",
+    "end": "9:15pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233662,
+    "dancers": ""
+  },
+  {
+    "name": "INTER GYM",
+    "type": "Gym",
+    "day": "Mon",
+    "start": "6:30pm",
+    "end": "7:30pm",
+    "instructor": "Brittany B.",
+    "classid": 15233639,
+    "dancers": ""
+  },
+  {
+    "name": "INTER GYM",
+    "type": "Gym",
+    "day": "Tue",
+    "start": "6:30pm",
+    "end": "7:30pm",
+    "instructor": "Brittany B.",
+    "classid": 15233751,
+    "dancers": ""
+  },
+  {
+    "name": "INTER JAZZ SMALL CHOREO",
+    "type": "Jazz",
+    "day": "Thu",
+    "start": "7:45pm",
+    "end": "8:30pm",
+    "instructor": "Sarah S.",
+    "classid": 15234062,
+    "dancers": ""
+  },
+  {
+    "name": "INTER JAZZ TECH",
+    "type": "Jazz",
+    "day": "Mon",
+    "start": "4:30pm",
+    "end": "5:30pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233621,
+    "dancers": ""
+  },
+  {
+    "name": "INTER LYRICAL CHOREO",
+    "type": "Lyrical",
+    "day": "Thu",
+    "start": "6:45-m",
+    "end": "7:45pm",
+    "instructor": "Sarah S.",
+    "classid": 15234050,
+    "dancers": ""
+  },
+  {
+    "name": "INTER STRETCH",
+    "type": "Stretch",
+    "day": "Sat",
+    "start": "10:30am",
+    "end": "11:30am",
+    "instructor": "Sarah S.",
+    "classid": 15234161,
+    "dancers": ""
+  },
+  {
+    "name": "JR BALLET TECH (GROUP 2)",
+    "type": "Ballet",
+    "day": "Tue",
+    "start": "6:30pm",
+    "end": "7:30pm",
+    "instructor": "Irina L.",
+    "classid": 15233703,
+    "dancers": ""
+  },
+  {
+    "name": "JR HIP HOP CHOREO",
+    "type": "Hip Hop",
+    "day": "Wed",
+    "start": "6:30pm",
+    "end": "7:30pm",
+    "instructor": "Anthony S.",
+    "classid": 15233806,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR ACRO SMALL CHOREO",
+    "type": "Acro",
+    "day": "Tue",
+    "start": "5:30pm",
+    "end": "6:30pm",
+    "instructor": "",
+    "classid": 15233681,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR ACRO TECH",
+    "type": "Acro",
+    "day": "Tue",
+    "start": "4:30pm",
+    "end": "5:30pm",
+    "instructor": "",
+    "classid": 15233667,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR BALLET CHOREO",
+    "type": "Ballet",
+    "day": "Mon",
+    "start": "7:30pm",
+    "end": "8:30pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233654,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR BALLET TECH (GROUP 1)",
+    "type": "Ballet",
+    "day": "Mon",
+    "start": "5:30pm",
+    "end": "6:30pm",
+    "instructor": "Irina L.",
+    "classid": 15233596,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR BALLET TECH (GROUP 1)",
+    "type": "Ballet",
+    "day": "Tue",
+    "start": "4:30pm",
+    "end": "5:30pm",
+    "instructor": "Irina L.",
+    "classid": 15233675,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR BALLET TECH (GROUP 2)",
+    "type": "Ballet",
+    "day": "Mon",
+    "start": "6:30pm",
+    "end": "7:30pm",
+    "instructor": "Irina L.",
+    "classid": 15233600,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR CONTEMPORARY SMALL CHOREO",
+    "type": "Contemporary",
+    "day": "Sat",
+    "start": "1:30pm",
+    "end": "2:15pm",
+    "instructor": "Sarah S.",
+    "classid": 15234172,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR GYM",
+    "type": "Gym",
+    "day": "Thu",
+    "start": "4:30pm",
+    "end": "5:30pm",
+    "instructor": "Brittany B.",
+    "classid": 15233878,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR HIP HOP TECH",
+    "type": "Hip Hop",
+    "day": "Wed",
+    "start": "4:30pm",
+    "end": "5:30pm",
+    "instructor": "Anthony S.",
+    "classid": 15233835,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR JAZZ SMALL CHOREO",
+    "type": "Jazz",
+    "day": "Thu",
+    "start": "5:30pm",
+    "end": "6:00pm",
+    "instructor": "Sarah S.",
+    "classid": 15233897,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR JAZZ SMALL CHOREO",
+    "type": "Jazz",
+    "day": "Wed",
+    "start": "8:15pm",
+    "end": "8:45pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233783,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR JAZZ TECH",
+    "type": "Jazz",
+    "day": "Sat",
+    "start": "12:30pm",
+    "end": "1:30pm",
+    "instructor": "Sarah S.",
+    "classid": 15234171,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR LYRICAL LARGE CHOREO",
+    "type": "Lyrical",
+    "day": "Wed",
+    "start": "7:15pm",
+    "end": "8:15pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233779,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR STRETCH",
+    "type": "Stretch",
+    "day": "Mon",
+    "start": "5:30pm",
+    "end": "6:30pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233628,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR TAP CHOREO",
+    "type": "Tap",
+    "day": "Thu",
+    "start": "6:45pm",
+    "end": "7:30pm",
+    "instructor": "David C.",
+    "classid": 15234056,
+    "dancers": ""
+  },
+  {
+    "name": "JUNIOR TAP TECH",
+    "type": "Tap",
+    "day": "Thu",
+    "start": "6:00pm",
+    "end": "6:45pm",
+    "instructor": "David C.",
+    "classid": 15234014,
+    "dancers": ""
+  },
+  {
+    "name": "NOVICE BALLET",
+    "type": "Ballet",
+    "day": "Wed",
+    "start": "5:15pm",
+    "end": "6:15pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233772,
+    "dancers": ""
+  },
+  {
+    "name": "NOVICE JAZZ CHOREO",
+    "type": "Jazz",
+    "day": "Tue",
+    "start": "5:30pm",
+    "end": "6:30pm",
+    "instructor": "Sarah S.",
+    "classid": 15233690,
+    "dancers": ""
+  },
+  {
+    "name": "NOVICE JAZZ TECH",
+    "type": "Jazz",
+    "day": "Tue",
+    "start": "4:30pm",
+    "end": "5:30pm",
+    "instructor": "Sarah S.",
+    "classid": 15233676,
+    "dancers": ""
+  },
+  {
+    "name": "NOVICE STRETCH",
+    "type": "Stretch",
+    "day": "Wed",
+    "start": "4:30pm",
+    "end": "5:15pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233759,
+    "dancers": ""
+  },
+  {
+    "name": "SENIOR BALLET TECH",
+    "type": "Ballet",
+    "day": "Tue",
+    "start": "7:30pm",
+    "end": "9:00pm",
+    "instructor": "Irina L.",
+    "classid": 15233721,
+    "dancers": ""
+  },
+  {
+    "name": "SENIOR BALLET TECH",
+    "type": "Ballet",
+    "day": "Mon",
+    "start": "4:30pm",
+    "end": "5:30pm",
+    "instructor": "Irina L.",
+    "classid": 15234554,
+    "dancers": ""
+  },
+  {
+    "name": "SENIOR CONTEMPORARY SMALL CHOREO",
+    "type": "Contemporary",
+    "day": "Fri",
+    "start": "6:00pm",
+    "end": "6:45pm",
+    "instructor": "Sarah S.",
+    "classid": 15234079,
+    "dancers": ""
+  },
+  {
+    "name": "SENIOR JAZZ SMALL CHOREO",
+    "type": "Jazz",
+    "day": "Fri",
+    "start": "5:15pm",
+    "end": "6:00pm",
+    "instructor": "Sarah S.",
+    "classid": 15234074,
+    "dancers": ""
+  },
+  {
+    "name": "SENIOR JAZZ TECH",
+    "type": "Jazz",
+    "day": "Tue",
+    "start": "6:30pm",
+    "end": "7:30pm",
+    "instructor": "",
+    "classid": 15233697,
+    "dancers": ""
+  },
+  {
+    "name": "SENIOR LYRICAL CHOREO",
+    "type": "Lyrical",
+    "day": "Mon",
+    "start": "6:30pm",
+    "end": "7:30pm",
+    "instructor": "Kayleigh N.",
+    "classid": 15233635,
+    "dancers": ""
+  },
+  {
+    "name": "SENIOR STRETCH",
+    "type": "Stretch",
+    "day": "Fri",
+    "start": "4:30pm",
+    "end": "5:15pm",
+    "instructor": "Sarah S.",
+    "classid": 15234064,
+    "dancers": ""
+  }
+]

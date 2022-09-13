@@ -1,8 +1,6 @@
 import React from "react";
 import "bootstrap";
 import RoutineData from "../routines.json";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMusic } from "@fortawesome/free-solid-svg-icons";
 
 class Routines extends React.Component {
   constructor() {
@@ -21,14 +19,14 @@ class Routines extends React.Component {
 
   render() {
     return (
-      <div style={this.minHeight}>
+      <div>
         <div className="container py-5">
           <div className="row row-cols-1 row-cols-md-2 row-cols-xxl-2 g-2 mb-5 justify-content-between align-items-center">
             <div className="col">
               <h1 className="mb-0">Routines</h1>
             </div>
             <div className="col">
-              <input value={this.state.filterSearch} onChange={this.changeSearch.bind(this)} type="text" className="form-control form-control-lg" id="search" placeholder="Search (routine, dancer, style)..." />
+              <input value={this.state.filterSearch} onChange={this.changeSearch.bind(this)} type="search" className="form-control form-control-lg" id="search" placeholder="Search (routine, dancer, style)..." autoComplete="off" />
             </div>
           </div>
           <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4 g-xl-5">
@@ -36,6 +34,7 @@ class Routines extends React.Component {
               .filter((routine) => {
                 const filterSearch = this.state.filterSearch.toLowerCase();
                 return routine.dancers.find((dancer) => dancer.toLowerCase().includes(filterSearch)) || routine.name.toLowerCase().includes(filterSearch) || routine.type.toLowerCase().includes(filterSearch);
+                // return routine.dancers.find((dancer) => dancer.toLowerCase().includes(filterSearch)) || routine.name.toLowerCase().includes(filterSearch) || routine.type.toLowerCase().includes(filterSearch);
               })
               .sort((a, b) => (a.name > b.name ? 1 : -1))
               .map((routine, i) => (
@@ -47,7 +46,7 @@ class Routines extends React.Component {
                         <div className="fw-light text-capitalize ps-2">({routine.type})</div>
                       </div>
                     </div>
-                    <div className="d-flex align-items-center py-1 px-3">
+                    {/* <div className="d-flex align-items-center py-1 px-3">
                       <div className="flex-fill me-3">
                         <hr />
                       </div>
@@ -61,7 +60,7 @@ class Routines extends React.Component {
                           <span className="fw-lighter text-muted">Song not available</span>
                         )}
                       </div>
-                    </div>
+                    </div> */}
                     <div className="card-body">
                       <table className="table table-borderless small">
                         <tbody>
@@ -102,11 +101,6 @@ class Routines extends React.Component {
                         </tbody>
                       </table>
                     </div>
-                    {/* <div className="card-footer">
-                      <div className="d-flex justify-content-start align-items-end">
-                        <div>Footer...</div>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               ))}

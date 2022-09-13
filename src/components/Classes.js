@@ -60,7 +60,7 @@ class Classes extends React.Component {
           name: "Hip Hop Choreo",
           day: "wednesday",
           start: "2022-01-01T18:30:00",
-          end: "2022-01-01T19:30:00",
+          end: "2022-01-01T19:15:00",
           instructor: "Anthony",
         },
         {

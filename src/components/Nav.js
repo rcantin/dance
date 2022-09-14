@@ -35,25 +35,20 @@ class TopNav extends React.Component {
               <div className="offcanvas-body" data-bs-dismiss="offcanvas">
                 <ul className="navbar-nav justify-content-center align-items-center text-center ms-auto">
                   <li className="nav-item">
-                    <Link to="/" className="nav-link text-primary">
+                    <Link to="/" className="nav-link text-primary fs-5 fw-normal">
                       Home
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/classes" className="nav-link text-primary">
+                    <Link to="/classes" className="nav-link text-primary fs-5 fw-normal">
                       Class Schedule
                     </Link>
                   </li>
-                  {/* <li className="nav-item">
-                    <Link to="/routines" className="nav-link text-primary">
+                  <li className="nav-item">
+                    <Link to="/routines" className="nav-link text-primary fs-5 fw-normal">
                       Routines
                     </Link>
-                  </li> */}
-                  {/* <li className="nav-item">
-                    <Link to="/glossary" className="nav-link text-primary">
-                      Glossary
-                    </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>

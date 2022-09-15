@@ -7,11 +7,11 @@ class Classes extends React.Component {
     super();
     this.state = {
       weekdays: [
-        { day: "monday", message: "School bus - come straight home" },
-        { day: "tuesday", message: "Dream Centre bus - change when you get there" },
-        { day: "wednesday", message: "School bus - come straight home" },
-        { day: "thursday", message: "Dream Centre bus - change when you get there" },
-        { day: "saturday", message: "Relax - it's Saturday!" },
+        { day: "monday", message: "School Bus" },
+        { day: "tuesday", message: "Dream Centre Bus" },
+        { day: "wednesday", message: "School Bus" },
+        { day: "thursday", message: "Dream Centre Bus" },
+        { day: "saturday", message: "Relax - It's Saturday!" },
       ],
       classes: [
         {
@@ -117,11 +117,49 @@ class Classes extends React.Component {
   }
 
   render() {
+    const timeCell = {
+      lineHeight: "1.1em",
+      width: "110px",
+      height: "80px",
+    };
     return (
       <div>
         <div className="container py-5">
           <h1>Class Schedule</h1>
-          <table className="table table-borderless">
+
+          <div>
+            {this.state.weekdays.map((weekday, di) => (
+              <div key={di} className="py-3">
+                <div className="d-flex">
+                  <div className="h2 mb-0 text-capitalize">{weekday.day}</div>
+                  <div className="w-100 ps-3">
+                    <hr />
+                  </div>
+                </div>
+                <div className="h5 mb-0 fw-light">{weekday.message}</div>
+                {this.state.classes
+                  .filter((classdata) => {
+                    return classdata.day === weekday.day;
+                  })
+                  .sort((a, b) => (a.start > b.start ? 1 : -1))
+                  .map((classdata, ci) => (
+                    <div key={ci} className="d-flex justify-content-start align-items-center my-3">
+                      <div className="d-flex justify-content-center align-items-center flex-column text-nowrap text-center text-white bg-primary p-1" style={timeCell}>
+                        <div className="fw-bold">{moment(classdata.start).format("h:mm A")}</div>
+                        <div className="small fw-lighter">TO</div>
+                        <div className="fw-bold">{moment(classdata.end).format("h:mm A")}</div>
+                      </div>
+                      <div className="w-100 ps-3">
+                        <div className="h3 mb-0 fw-bold">{classdata.name}</div>
+                        <div className="h6 mb-0 fw-light">{classdata.instructor}</div>
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            ))}
+          </div>
+
+          {/* <table className="table table-borderless">
             {this.state.weekdays.map((weekday, di) => (
               <tbody key={di}>
                 <tr>
@@ -149,7 +187,7 @@ class Classes extends React.Component {
                   ))}
               </tbody>
             ))}
-          </table>
+          </table> */}
         </div>
       </div>
     );

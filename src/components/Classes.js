@@ -105,6 +105,27 @@ class Classes extends React.Component {
           end: "2022-01-01T13:30:00",
           instructor: "Sarah",
         },
+        {
+          name: "Ballet Solo",
+          day: "tuesday",
+          start: "2022-01-01T16:00:00",
+          end: "2022-01-01T16:30:00",
+          instructor: "Irina",
+        },
+        {
+          name: "Hip Hop Solo",
+          day: "wednesday",
+          start: "2022-01-01T16:00:00",
+          end: "2022-01-01T16:30:00",
+          instructor: "Anthony",
+        },
+        {
+          name: "Hip Hop Duet",
+          day: "wednesday",
+          start: "2022-01-01T15:30:00",
+          end: "2022-01-01T16:00:00",
+          instructor: "Anthony",
+        },
       ],
       filterSearch: "",
     };

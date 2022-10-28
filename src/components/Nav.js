@@ -7,20 +7,20 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 class TopNav extends React.Component {
   bannerlogostyle = {
-    height: 42,
-    padding: 6,
+    height: 28,
+    // padding: 6,
   };
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-print-none">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-print-none py-3 px-1">
           <div className="container-fluid">
             <Link to="/" className="navbar-brand p-1">
               <div className="d-flex justify-content-start align-items-center">
                 <div>
                   <img src={Logo} alt="Logo" style={this.bannerlogostyle} />
                 </div>
-                <div className="fw-lighter fs-5">Dance Team Resources</div>
+                <div className="fw-light fs-3 ps-1">Amelia's Dance</div>
               </div>
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -35,17 +35,17 @@ class TopNav extends React.Component {
               <div className="offcanvas-body" data-bs-dismiss="offcanvas">
                 <ul className="navbar-nav justify-content-center align-items-center text-center ms-auto">
                   <li className="nav-item">
-                    <Link to="/" className="nav-link text-primary fs-5 fw-normal">
+                    <Link to="/" className="nav-link text-primary fw-normal">
                       Home
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/classes" className="nav-link text-primary fs-5 fw-normal">
+                    <Link to="/classes" className="nav-link text-primary fw-normal">
                       Class Schedule
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/routines" className="nav-link text-primary fs-5 fw-normal">
+                    <Link to="/routines" className="nav-link text-primary fw-normal">
                       Routines
                     </Link>
                   </li>

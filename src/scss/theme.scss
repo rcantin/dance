@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;600;700;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
-$primary: #e83e8c;
-$secondary: #444444;
-$info: #9966cc;
+$primary: #00b9bc;
+$secondary: #8a61a9;
+$info: #65e0dc;
 $success: #66cc66;
 $warning: #ff9933;
 $danger: #ff3333;
@@ -17,8 +17,10 @@ body,
   height: 100%;
 }
 
+$font-family-base: "Barlow", Arial, sans-serif;
+
 .font-script {
-  font-family: "Indie Flower", cursive;
+  font-family: "Square Peg", cursive;
 }
 
 $navbar-dark-color: $light;
@@ -27,8 +29,6 @@ $navbar-dark-active-color: #ffffff;
 $navbar-dark-toggler-border-color: transparent;
 
 $body-bg: $light;
-
-$font-family-base: "Outfit", Arial, sans-serif;
 
 $input-group-addon-bg: darken($light, 6%);
 
@@ -65,11 +65,11 @@ ol.spaced > li {
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 @include media-breakpoint-up(lg) {
   .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }

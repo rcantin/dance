@@ -11,7 +11,7 @@ import Glossary from "./components/Glossary";
 
 class App extends React.Component {
   topspacing = {
-    marginTop: 70,
+    marginTop: 50,
   };
 
   render() {

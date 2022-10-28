@@ -5,9 +5,11 @@ class Footer extends React.Component {
   render() {
     return (
       <div>
-        <div className="p-5 bg-dark text-white">
-          <div className="d-md-flex justify-content-center align-items-center flex-column py-4 text-center font-script h3 fw-light">
-            <div>Life isn't about waiting for the storm to pass. It's about learning to dance in the rain.</div>
+        <div className="p-4 bg-dark text-white">
+          <div className="d-md-flex justify-content-center align-items-center flex-column py-3 text-center font-script display-4 fw-light">
+            <div>
+              Don't wait for the storm to pass. Learn to <span className="text-nowrap">dance in the rain.</span>
+            </div>
           </div>
         </div>
       </div>

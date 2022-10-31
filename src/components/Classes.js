@@ -45,10 +45,24 @@ class Classes extends React.Component {
           instructor: "Kayleigh",
         },
         {
+          name: "Hip Hop Duet",
+          day: "wednesday",
+          start: "2022-01-01T15:30:00",
+          end: "2022-01-01T16:00:00",
+          instructor: "Anthony",
+        },
+        {
           name: "Hip Hop Solo",
           day: "wednesday",
           start: "2022-01-01T16:00:00",
           end: "2022-01-01T16:30:00",
+          instructor: "Anthony",
+        },
+        {
+          name: "Hip Hop Tech",
+          day: "wednesday",
+          start: "2022-01-01T16:30:00",
+          end: "2022-01-01T17:30:00",
           instructor: "Anthony",
         },
         {
@@ -71,13 +85,6 @@ class Classes extends React.Component {
           start: "2022-01-01T19:30:00",
           end: "2022-01-01T20:15:00",
           instructor: "Kayleigh",
-        },
-        {
-          name: "Hip Hop Tech",
-          day: "wednesday",
-          start: "2022-01-01T19:15:00",
-          end: "2022-01-01T20:00:00",
-          instructor: "Anthony",
         },
         {
           name: "Tap Tech",
@@ -108,120 +115,6 @@ class Classes extends React.Component {
           instructor: "Sarah",
         },
       ],
-      // classes: [
-      //   {
-      //     name: "Stretch",
-      //     day: "monday",
-      //     start: "2022-01-01T17:30:00",
-      //     end: "2022-01-01T18:30:00",
-      //     instructor: "Kayleigh",
-      //   },
-      //   {
-      //     name: "Ballet Tech",
-      //     day: "monday",
-      //     start: "2022-01-01T18:30:00",
-      //     end: "2022-01-01T19:30:00",
-      //     instructor: "Irina",
-      //   },
-      //   {
-      //     name: "Ballet Choreo",
-      //     day: "monday",
-      //     start: "2022-01-01T19:30:00",
-      //     end: "2022-01-01T20:30:00",
-      //     instructor: "Kayleigh",
-      //   },
-      //   {
-      //     name: "Ballet Tech",
-      //     day: "tuesday",
-      //     start: "2022-01-01T16:30:00",
-      //     end: "2022-01-01T17:30:00",
-      //     instructor: "Irina",
-      //   },
-      //   {
-      //     name: "Assistant - Ballet",
-      //     day: "tuesday",
-      //     start: "2022-01-01T17:30:00",
-      //     end: "2022-01-01T18:15:00",
-      //     instructor: "Sami",
-      //   },
-      //   {
-      //     name: "Hip Hop Tech",
-      //     day: "wednesday",
-      //     start: "2022-01-01T17:30:00",
-      //     end: "2022-01-01T18:30:00",
-      //     instructor: "Anthony",
-      //   },
-      //   {
-      //     name: "Hip Hop Choreo",
-      //     day: "wednesday",
-      //     start: "2022-01-01T18:30:00",
-      //     end: "2022-01-01T19:15:00",
-      //     instructor: "Anthony",
-      //   },
-      //   {
-      //     name: "Lyrical Large Choreo",
-      //     day: "wednesday",
-      //     start: "2022-01-01T19:15:00",
-      //     end: "2022-01-01T20:15:00",
-      //     instructor: "Kayleigh",
-      //   },
-      //   {
-      //     name: "Gym",
-      //     day: "thursday",
-      //     start: "2022-01-01T16:30:00",
-      //     end: "2022-01-01T17:30:00",
-      //     instructor: "Brittany",
-      //   },
-      //   {
-      //     name: "Tap Tech",
-      //     day: "thursday",
-      //     start: "2022-01-01T18:00:00",
-      //     end: "2022-01-01T18:45:00",
-      //     instructor: "David",
-      //   },
-      //   {
-      //     name: "Tap Choreo",
-      //     day: "thursday",
-      //     start: "2022-01-01T18:45:00",
-      //     end: "2022-01-01T19:30:00",
-      //     instructor: "David",
-      //   },
-      //   {
-      //     name: "Extended Line",
-      //     day: "saturday",
-      //     start: "2022-01-01T11:30:00",
-      //     end: "2022-01-01T12:30:00",
-      //     instructor: "Sarah",
-      //   },
-      //   {
-      //     name: "Jazz Tech",
-      //     day: "saturday",
-      //     start: "2022-01-01T12:30:00",
-      //     end: "2022-01-01T13:30:00",
-      //     instructor: "Sarah",
-      //   },
-      //   {
-      //     name: "Ballet Solo",
-      //     day: "tuesday",
-      //     start: "2022-01-01T16:00:00",
-      //     end: "2022-01-01T16:30:00",
-      //     instructor: "Irina",
-      //   },
-      //   {
-      //     name: "Hip Hop Solo",
-      //     day: "wednesday",
-      //     start: "2022-01-01T16:00:00",
-      //     end: "2022-01-01T16:30:00",
-      //     instructor: "Anthony",
-      //   },
-      //   {
-      //     name: "Hip Hop Duet",
-      //     day: "wednesday",
-      //     start: "2022-01-01T15:30:00",
-      //     end: "2022-01-01T16:00:00",
-      //     instructor: "Anthony",
-      //   },
-      // ],
       filterSearch: "",
     };
   }
@@ -243,9 +136,9 @@ class Classes extends React.Component {
         <div className="container py-5">
           <h1>Class Schedule</h1>
 
-          <div className="alert alert-danger shadow">
+          {/* <div className="alert alert-danger shadow">
             <strong>CONFLICT:</strong> Wednesday Inter Hip Hop Tech overlaps with Lyrical Choreo
-          </div>
+          </div> */}
 
           <div>
             {this.state.weekdays.map((weekday, di) => (

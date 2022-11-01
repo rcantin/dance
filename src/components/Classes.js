@@ -15,108 +15,31 @@ class Classes extends React.Component {
         { day: "saturday", message: "" },
         { day: "sunday", message: "No classes" },
       ],
-      classes: [
-        {
-          name: "Ballet Tech",
-          day: "monday",
-          start: "2022-01-01T16:30:00",
-          end: "2022-01-01T17:30:00",
-          instructor: "Irina",
-        },
-        {
-          name: "Stretch and Tech",
-          day: "monday",
-          start: "2022-01-01T17:30:00",
-          end: "2022-01-01T18:30:00",
-          instructor: "Cait",
-        },
-        {
-          name: "Ballet Solo",
-          day: "monday",
-          start: "2022-01-01T18:30:00",
-          end: "2022-01-01T19:00:00",
-          instructor: "Irina",
-        },
-        {
-          name: "Ballet Choreo",
-          day: "monday",
-          start: "2022-01-01T19:30:00",
-          end: "2022-01-01T20:30:00",
-          instructor: "Kayleigh",
-        },
-        {
-          name: "Hip Hop Duet",
-          day: "wednesday",
-          start: "2022-01-01T15:30:00",
-          end: "2022-01-01T16:00:00",
-          instructor: "Anthony",
-        },
-        {
-          name: "Hip Hop Solo",
-          day: "wednesday",
-          start: "2022-01-01T16:00:00",
-          end: "2022-01-01T16:30:00",
-          instructor: "Anthony",
-        },
-        {
-          name: "Hip Hop Tech",
-          day: "wednesday",
-          start: "2022-01-01T16:30:00",
-          end: "2022-01-01T17:30:00",
-          instructor: "Anthony",
-        },
-        {
-          name: "Ballet Tech",
-          day: "wednesday",
-          start: "2022-01-01T17:30:00",
-          end: "2022-01-01T18:30:00",
-          instructor: "Kayleigh",
-        },
-        {
-          name: "Hip Hop Choreo",
-          day: "wednesday",
-          start: "2022-01-01T18:30:00",
-          end: "2022-01-01T19:15:00",
-          instructor: "Anthony",
-        },
-        {
-          name: "Lyrical Choreo",
-          day: "wednesday",
-          start: "2022-01-01T19:30:00",
-          end: "2022-01-01T20:15:00",
-          instructor: "Kayleigh",
-        },
-        {
-          name: "Tap Tech",
-          day: "thursday",
-          start: "2022-01-01T18:45:00",
-          end: "2022-01-01T19:30:00",
-          instructor: "David",
-        },
-        {
-          name: "Tap Choreo",
-          day: "thursday",
-          start: "2022-01-01T19:30:00",
-          end: "2022-01-01T20:15:00",
-          instructor: "David",
-        },
-        {
-          name: "Extended Line",
-          day: "saturday",
-          start: "2022-01-01T11:30:00",
-          end: "2022-01-01T12:30:00",
-          instructor: "Sarah",
-        },
-        {
-          name: "Jazz Tech",
-          day: "saturday",
-          start: "2022-01-01T12:30:00",
-          end: "2022-01-01T13:30:00",
-          instructor: "Sarah",
-        },
-      ],
       filterSearch: "",
+      error: null,
+      isLoaded: false,
+      items: [],
     };
+  }
+
+  componentDidMount() {
+    fetch("https://vfrcreative.com/api/index.php")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          console.log(result);
+          this.setState({
+            isLoaded: true,
+            items: result,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
   }
 
   changeSearch(e) {
@@ -150,18 +73,18 @@ class Classes extends React.Component {
                   </div>
                 </div>
                 <div className="fw-light">{weekday.message}</div>
-                {this.state.classes
+                {this.state.items
                   .filter((classdata) => {
                     return classdata.day === weekday.day;
                   })
-                  .sort((a, b) => (a.start > b.start ? 1 : -1))
+                  .sort((a, b) => (a.start_time > b.start_time ? 1 : -1))
                   .map((classdata, ci) => (
                     <div key={ci} className="d-flex justify-content-start align-items-center my-2">
-                      {classdata.start ? (
+                      {classdata.start_time ? (
                         <div className="d-flex justify-content-center align-items-center flex-column text-nowrap text-center text-white bg-primary p-1" style={timeCell}>
-                          <div className="fw-bold">{moment(classdata.start).format("h:mm A")}</div>
+                          <div className="fw-bold">{moment(classdata.start_time).format("h:mm A")}</div>
                           <div className="small fw-lighter">TO</div>
-                          <div className="fw-bold">{moment(classdata.end).format("h:mm A")}</div>
+                          <div className="fw-bold">{moment(classdata.end_time).format("h:mm A")}</div>
                         </div>
                       ) : (
                         false

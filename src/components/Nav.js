@@ -7,7 +7,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 class TopNav extends React.Component {
   bannerlogostyle = {
-    height: 28,
+    height: 35,
     // padding: 6,
   };
   render() {
@@ -20,7 +20,7 @@ class TopNav extends React.Component {
                 <div>
                   <img src={Logo} alt="Logo" style={this.bannerlogostyle} />
                 </div>
-                <div className="fw-light fs-3 ps-1">Amelia's Dance</div>
+                <div className="fw-light fs-3 ps-2">Amelia's Dance</div>
               </div>
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

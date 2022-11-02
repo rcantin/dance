@@ -59,45 +59,45 @@ class Classes extends React.Component {
         <div className="container py-5">
           <h1>Class Schedule</h1>
 
-          {/* <div className="alert alert-danger shadow">
-            <strong>CONFLICT:</strong> Wednesday Inter Hip Hop Tech overlaps with Lyrical Choreo
-          </div> */}
-
-          <div>
-            {this.state.weekdays.map((weekday, di) => (
-              <div key={di} className="py-3">
-                <div className="d-flex">
-                  <div className="h3 mb-0 text-capitalize">{weekday.day}</div>
-                  <div className="w-100 ps-3">
-                    <hr />
-                  </div>
-                </div>
-                <div className="fw-light">{weekday.message}</div>
-                {this.state.items
-                  .filter((classdata) => {
-                    return classdata.day === weekday.day;
-                  })
-                  .sort((a, b) => (a.start_time > b.start_time ? 1 : -1))
-                  .map((classdata, ci) => (
-                    <div key={ci} className="d-flex justify-content-start align-items-center my-2">
-                      {classdata.start_time ? (
-                        <div className="d-flex justify-content-center align-items-center flex-column text-nowrap text-center text-white bg-primary p-1" style={timeCell}>
-                          <div className="fw-bold">{moment(classdata.start_time).format("h:mm A")}</div>
-                          <div className="small fw-lighter">TO</div>
-                          <div className="fw-bold">{moment(classdata.end_time).format("h:mm A")}</div>
-                        </div>
-                      ) : (
-                        false
-                      )}
-                      <div className="w-100 ps-3">
-                        <div className="h5 mb-0">{classdata.name}</div>
-                        <div className="h5 mb-0 fw-light">{classdata.instructor}</div>
-                      </div>
+          {this.state.isLoaded ? (
+            <div>
+              {this.state.weekdays.map((weekday, di) => (
+                <div key={di} className="py-3">
+                  <div className="d-flex">
+                    <div className="h3 mb-0 text-capitalize">{weekday.day}</div>
+                    <div className="w-100 ps-3">
+                      <hr />
                     </div>
-                  ))}
-              </div>
-            ))}
-          </div>
+                  </div>
+                  <div className="fw-light">{weekday.message}</div>
+                  {this.state.items
+                    .filter((classdata) => {
+                      return classdata.day === weekday.day;
+                    })
+                    .sort((a, b) => (a.start_time > b.start_time ? 1 : -1))
+                    .map((classdata, ci) => (
+                      <div key={ci} className="d-flex justify-content-start align-items-center my-2">
+                        {classdata.start_time ? (
+                          <div className="d-flex justify-content-center align-items-center flex-column text-nowrap text-center text-white bg-primary p-1" style={timeCell}>
+                            <div className="fw-bold">{moment(classdata.start_time).format("h:mm A")}</div>
+                            <div className="small fw-lighter">TO</div>
+                            <div className="fw-bold">{moment(classdata.end_time).format("h:mm A")}</div>
+                          </div>
+                        ) : (
+                          false
+                        )}
+                        <div className="w-100 ps-3">
+                          <div className="h5 mb-0">{classdata.name}</div>
+                          <div className="h5 mb-0 fw-light">{classdata.instructor}</div>
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="py-3 fw-light">Getting data...</div>
+          )}
 
           {/* <table className="table table-borderless">
             {this.state.weekdays.map((weekday, di) => (

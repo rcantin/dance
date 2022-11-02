@@ -15,6 +15,7 @@ class Classes extends React.Component {
         { day: "saturday", message: "" },
         { day: "sunday", message: "No classes" },
       ],
+      dancer: "Amelia",
       filterSearch: "",
       error: null,
       isLoaded: false,
@@ -23,7 +24,7 @@ class Classes extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://vfrcreative.com/api/index.php")
+    fetch(`https://vfrcreative.com/api/index.php?dancer=${this.state.dancer}`)
       .then((res) => res.json())
       .then(
         (result) => {

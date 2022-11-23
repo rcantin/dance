@@ -46,7 +46,7 @@ class TopNav extends React.Component {
                   </li>
                   <li className="nav-item">
                     <Link to="/onlinelinks" className="nav-link text-primary fw-normal">
-                      Online Class Links
+                      Zoom Links
                     </Link>
                   </li>
                   {/* <li className="nav-item">

@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/dance/static/css/main.3983a0cc.chunk.css",
-    "main.js": "/dance/static/js/main.3ded28e6.chunk.js",
-    "main.js.map": "/dance/static/js/main.3ded28e6.chunk.js.map",
+    "main.js": "/dance/static/js/main.f8306cf0.chunk.js",
+    "main.js.map": "/dance/static/js/main.f8306cf0.chunk.js.map",
     "runtime-main.js": "/dance/static/js/runtime-main.78551c91.js",
     "runtime-main.js.map": "/dance/static/js/runtime-main.78551c91.js.map",
-    "static/js/2.18de1439.chunk.js": "/dance/static/js/2.18de1439.chunk.js",
-    "static/js/2.18de1439.chunk.js.map": "/dance/static/js/2.18de1439.chunk.js.map",
+    "static/js/2.31b27070.chunk.js": "/dance/static/js/2.31b27070.chunk.js",
+    "static/js/2.31b27070.chunk.js.map": "/dance/static/js/2.31b27070.chunk.js.map",
     "index.html": "/dance/index.html",
     "static/css/main.3983a0cc.chunk.css.map": "/dance/static/css/main.3983a0cc.chunk.css.map",
-    "static/js/2.18de1439.chunk.js.LICENSE.txt": "/dance/static/js/2.18de1439.chunk.js.LICENSE.txt",
-    "static/media/dance-logo.b337697b.svg": "/dance/static/media/dance-logo.b337697b.svg"
+    "static/js/2.31b27070.chunk.js.LICENSE.txt": "/dance/static/js/2.31b27070.chunk.js.LICENSE.txt",
+    "static/media/dance-logo.4e754921.svg": "/dance/static/media/dance-logo.4e754921.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.78551c91.js",
-    "static/js/2.18de1439.chunk.js",
+    "static/js/2.31b27070.chunk.js",
     "static/css/main.3983a0cc.chunk.css",
-    "static/js/main.3ded28e6.chunk.js"
+    "static/js/main.f8306cf0.chunk.js"
   ]
 }

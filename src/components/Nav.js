@@ -20,7 +20,7 @@ class TopNav extends React.Component {
                 <div>
                   <img src={Logo} alt="Logo" style={this.bannerlogostyle} />
                 </div>
-                <div className="fw-light fs-3 ps-2">Amelia's Dance</div>
+                <div className="fw-light fs-3 ps-2">Dance Stuff</div>
               </div>
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -45,10 +45,15 @@ class TopNav extends React.Component {
                     </Link>
                   </li>
                   <li className="nav-item">
+                    <Link to="/onlinelinks" className="nav-link text-primary fw-normal">
+                      Online Class Links
+                    </Link>
+                  </li>
+                  {/* <li className="nav-item">
                     <Link to="/routines" className="nav-link text-primary fw-normal">
                       Routines
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

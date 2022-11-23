@@ -7,7 +7,8 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Routines from "./components/Routines";
 import Classes from "./components/Classes";
-import Glossary from "./components/Glossary";
+import Schedule from "./components/Schedule";
+import OnlineLinks from "./components/OnlineLinks";
 
 class App extends React.Component {
   topspacing = {
@@ -27,7 +28,8 @@ class App extends React.Component {
                 <Route path="/" exact component={Home} />
                 <Route path="/routines" component={Routines} />
                 <Route path="/classes" component={Classes} />
-                <Route path="/glossary" component={Glossary} />
+                <Route path="/schedule" component={Schedule} />
+                <Route path="/onlinelinks" component={OnlineLinks} />
               </Switch>
             </div>
             <div>

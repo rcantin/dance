@@ -1,19 +1,21 @@
 import React from "react";
 import "bootstrap";
 import moment from "moment";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 class Classes extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       weekdays: [
-        { day: "monday", message: "" },
-        { day: "tuesday", message: "No classes" },
-        { day: "wednesday", message: "" },
-        { day: "thursday", message: "" },
-        { day: "friday", message: "No classes" },
-        { day: "saturday", message: "" },
-        { day: "sunday", message: "No classes" },
+        { ord: 1, day: "monday", message: "" },
+        { ord: 2, day: "tuesday", message: "No classes" },
+        { ord: 3, day: "wednesday", message: "" },
+        { ord: 4, day: "thursday", message: "" },
+        { ord: 5, day: "friday", message: "No classes" },
+        { ord: 6, day: "saturday", message: "" },
+        { ord: 7, day: "sunday", message: "No classes" },
       ],
       dancer: "Amelia",
       filterSearch: "",
@@ -21,9 +23,25 @@ class Classes extends React.Component {
       isLoaded: false,
       items: [],
     };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
+  handleChange(event) {
+    this.setState({ dancer: event.target.value });
+    localStorage.setItem("dancer", event.target.value);
+  }
+
+  handleSubmit(event) {
+    this.getScheduleAPIData();
+    event.preventDefault();
+  }
+
+  getScheduleAPIData() {
+    this.setState({
+      isLoaded: false,
+      items: [],
+    });
     fetch(`https://vfrcreative.com/api/index.php?dancer=${this.state.dancer}`)
       .then((res) => res.json())
       .then(
@@ -43,6 +61,10 @@ class Classes extends React.Component {
       );
   }
 
+  componentDidMount() {
+    this.getScheduleAPIData();
+  }
+
   changeSearch(e) {
     this.setState({
       filterSearch: e.target.value,
@@ -59,7 +81,46 @@ class Classes extends React.Component {
       <div>
         <div className="container py-5">
           <h1>Class Schedule</h1>
-
+          {/* <form onSubmit={this.handleSubmit}>
+            <div className="input-group input-group-lg mb-3">
+              <select className="form-select" value={this.state.dancer} onChange={this.handleChange}>
+                <option value="Amelia">Amelia</option>
+                <option value="Ryan">Ryan</option>
+              </select>
+              <button className="btn btn-primary text-white" type="submit" id="button-addon2">
+                <FontAwesomeIcon icon={faPlay} />
+              </button>
+            </div>
+          </form> */}
+          {/* <div className="card shadow">
+            <div className="card-body">
+              {this.state.isLoaded ? (
+                <div>
+                  {this.state.weekdays.map((weekday, di) => (
+                    <div key={di} className="mb-4">
+                      <div className="h4 text-capitalize">{weekday.day}</div>
+                      {this.state.items
+                        .filter((item) => {
+                          return item.day === weekday.day;
+                        })
+                        .sort((a, b) => (a.start_time > b.start_time ? 1 : -1))
+                        .map((item, ci) => (
+                          <div key={ci} className="pb-1">
+                            <div>{item.length}</div>
+                            <div className="fw-bold">{item.name}</div>
+                            <div className="small">
+                              {moment(item.start_time).format("h:mm A")} - {moment(item.end_time).format("h:mm A")}
+                            </div>
+                          </div>
+                        ))}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                "loading..."
+              )}
+            </div>
+          </div> */}
           {this.state.isLoaded ? (
             <div>
               {this.state.weekdays.map((weekday, di) => (
@@ -97,38 +158,11 @@ class Classes extends React.Component {
               ))}
             </div>
           ) : (
-            <div className="py-3 fw-light">Getting data...</div>
+            <div className="py-3">
+              <FontAwesomeIcon icon={faSpinner} pulse />
+              <span className="ms-1">Getting data...</span>
+            </div>
           )}
-
-          {/* <table className="table table-borderless">
-            {this.state.weekdays.map((weekday, di) => (
-              <tbody key={di}>
-                <tr>
-                  <th colSpan="3">
-                    <hr />
-                    <div className="text-capitalize fw-light fs-2">{weekday.day}</div>
-                    <div className="fw-light small">{weekday.message}</div>
-                  </th>
-                </tr>
-                {this.state.classes
-                  .filter((classdata) => {
-                    return classdata.day === weekday.day;
-                  })
-                  .sort((a, b) => (a.start > b.start ? 1 : -1))
-                  .map((classdata, ci) => (
-                    <tr key={ci}>
-                      <td className="text-nowrap fw-bold">
-                        {moment(classdata.start).format("h:mmA")} - {moment(classdata.end).format("h:mmA")}
-                      </td>
-                      <td className="w-100">
-                        <div className="fw-bold">{classdata.name}</div>
-                        <div className="small fw-light">{classdata.instructor}</div>
-                      </td>
-                    </tr>
-                  ))}
-              </tbody>
-            ))}
-          </table> */}
         </div>
       </div>
     );

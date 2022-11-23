@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import LocalStorage from "./LocalStorage";
 
 class Home extends React.Component {
   splashtext = {
@@ -22,10 +21,15 @@ class Home extends React.Component {
               </Link>
             </div>
             <div className="col">
+              <Link to="/onlinelinks" className="btn btn-primary text-white btn-block w-100 btn-lg px-5 py-4">
+                Zoom Links
+              </Link>
+            </div>
+            {/* <div className="col">
               <Link to="/routines" className="btn btn-primary text-white btn-block w-100 btn-lg px-5 py-4">
                 Routines
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
